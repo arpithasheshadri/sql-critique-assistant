@@ -1,0 +1,1 @@
+# sql-critique-assistant
