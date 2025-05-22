@@ -1,0 +1,59 @@
+# Byte-compiled / optimized files
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+.env
+
+# Pytest / coverage
+.cache/
+coverage.*
+htmlcov/
+*.cover
+*.py,cover
+
+# IDE configs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and local dbs
+*.log
+*.sqlite
+
+# FastAPI reload artifacts
+*.pid
+
+*.so
+
+# Virtual environment
+venv/
+.env
+
+# Pytest / coverage
+.cache/
+coverage.*
+htmlcov/
+*.cover
+*.py,cover
+
+# IDE configs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and local dbs
+*.log
+*.sqlite
+
+# FastAPI reload artifacts
+*.pid
