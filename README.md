@@ -6,9 +6,8 @@ A LangGraph-powered assistant that converts natural language into SQL, critiques
 
 ## 🚀 Features
 
-- 🗣️ `/ask` – Convert natural language into SQL with critique and explanation  
+- 🗣️ `/ask` – Quickly generate SQL from a user question (no critique)  
 - 🧠 `/critique` – Analyze and improve raw SQL queries  
-- ⚡ `/generate-sql` – Quickly generate SQL from a user question (no critique)  
 - 🧪 Includes rich test cases for evaluation and demo
 
 ---
