@@ -1,0 +1,71 @@
+openapi: 3.0.3
+info:
+  title: SQL Critique Assistant API
+  version: 1.0.0
+  description: |
+    This API supports two main features:
+    - Convert natural language questions to SQL
+    - Analyze and improve SQL queries using LangGraph
+
+servers:
+  - url: http://localhost:8000
+    description: Local development server
+
+paths:
+  /critique:
+    post:
+      summary: Critique a raw SQL query
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sql:
+                  type: string
+              required:
+                - sql
+      responses:
+        '200':
+          description: Critique result
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  parsed:
+                    type: string
+                  issues:
+                    type: array
+                    items:
+                      type: string
+                  suggested_query:
+                    type: string
+                  explanation:
+                    type: string
+
+  /ask:
+    post:
+      summary: Convert question to SQL only (no critique)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                question:
+                  type: string
+              required:
+                - question
+      responses:
+        '200':
+          description: Generated SQL
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  generated_sql:
+                    type: string
